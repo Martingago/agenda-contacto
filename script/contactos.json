@@ -1,0 +1,38 @@
+[
+        {
+            "ID": "000",
+            "nombre": "Martin",
+            "apellido": "Gago Chorén",
+            "telefono": "(686) 654 456",
+            "email": "someone@example.com",
+            "url": "https://example.com",
+            "imagen": "http://placekitten.com/50/50"
+        },
+        {
+            "ID": "001",
+            "nombre": "Sandra",
+            "apellido": "López Escudero",
+            "telefono": "(686) 753 268",
+            "email": "someone@example03.com",
+            "url": "https://example.com",
+            "imagen": "http://placekitten.com/50/50"
+        },
+        {
+            "ID": "002",
+            "nombre": "Fernando",
+            "apellido": "Hernandez Mendez",
+            "telefono": "(186) 534 621",
+            "email": "someone@example76.com",
+            "url": "https://example.com",
+            "imagen": "http://placekitten.com/50/50"
+        },
+        {
+            "ID": "003",
+            "nombre": "Maria",
+            "apellido": "Sánchez Millán",
+            "telefono": "(686) 654 456",
+            "email": "someone@example12.com",
+            "url": "https://example.com",
+            "imagen": "http://placekitten.com/50/50"
+        }
+    ]
