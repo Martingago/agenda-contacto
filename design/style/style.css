@@ -62,22 +62,34 @@
         height: auto;
     }
         .agenda-personas li div{
-            display: flex;
+            display: grid;
             gap: .5rem;
+            grid-template-columns: auto 1fr auto;
             align-items: center;
             border-radius: 5px;
             padding: .25rem;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color .2s linear;
+        }
+        .agenda-personas li div i{
+            opacity: 0;
+            transition: opacity .2s linear;
         }
         .agenda-personas li div:hover{
             background-color: rgb(239, 239, 239);
+        }
+        .agenda-personas li div:hover > i{
+            opacity: 1;
         }
         .agenda-personas li div img{
             width: 30px;
             height: 30px;
             border-radius: 50%;
+            object-fit: cover;
         }
         .agenda-personas li div p{
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 500;
             color: rgb(62, 62, 62);
         }
@@ -96,6 +108,7 @@
         width: 90px;
         height: 90px;
         border-radius: 50%;
+        object-fit: cover;
     }
 
     .profile-ppl  .nombre{
