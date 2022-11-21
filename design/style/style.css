@@ -4,8 +4,9 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../img/720732-sunset-landscape-sky-clouds.jpg);
+    background-image: url(../img/bg.webp);
     background-size: cover;
+    background-position: center;
     position: sticky;
     top: 0;
 }
@@ -61,6 +62,25 @@
         gap: .5rem;
         height: auto;
     }
+
+/* Barra desplazamiento */
+
+::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+    }
+    ::-webkit-scrollbar-track {
+    background: #f6f6f4;
+    border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+    background: rgb(58, 104, 228);
+    border-radius: 5px;
+    } 
+    ::-webkit-scrollbar-thumb:hover {
+    Background: darkgray
+    }
+
         .agenda-personas li div{
             display: grid;
             gap: .5rem;
@@ -70,11 +90,13 @@
             padding: .25rem;
             cursor: pointer;
             user-select: none;
+            -webkit-user-select: none;
             transition: background-color .2s linear;
         }
         .agenda-personas li div i{
             opacity: 0;
             transition: opacity .2s linear;
+            margin-right: .5rem;
         }
         .agenda-personas li div:hover{
             background-color: rgb(239, 239, 239);
@@ -132,7 +154,7 @@
         .contact-information p{
             font-weight: 900;
         }
-    .profile-ppl button{
+    .profile-ppl .send-msg{
         width: 100%;
         font-size: 1rem;
         background-color: rgb(58, 104, 228);
@@ -141,6 +163,45 @@
         font-weight: 900;
         margin-top: 1rem;
         border: none;
-        border-radius: 5px;
-        
+        border-radius: 5px; 
+    }
+    .btn-close{
+        display: none;
+    }
+
+
+    @media screen and (max-width: 700px) {
+        .agenda-element{
+            width: 90%;
+            max-width: 550px;
+            grid-template-columns: auto;
+            position: relative;
+        }
+        .buscador-element{
+            grid-column: 1 / 2;
+        }
+        .agenda-element hr{
+            grid-column: 1 / 2;
+        }
+        .profile-ppl{
+            display: none;
+            position: absolute;
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .btn-close{
+            display: block;
+            background-color: lightgray;
+            position: absolute;
+            top: 0;
+            border-radius: 3px;
+            border: none;
+            right: .5rem;
+            font-size: 1rem;
+            font-weight: 900;
+            cursor: pointer;
+        }
     }
